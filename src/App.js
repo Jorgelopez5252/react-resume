@@ -5,12 +5,14 @@ import Landing from "./components/Landing/Landing";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import reactResume from "./components/reactResume/reactResume"
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
+        <Route exact path="react-resume" component={reactResume}/>
         <Route exact path="/" component={Landing} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/contact" component={Contact} />
